@@ -1,15 +1,13 @@
-import axios from 'axios'
 import {  BrowserRouter as Router,Route, Routes } from 'react-router-dom';
-import Main from './Components/Main';
-import "./style.css"
+
+import Home from './Pages/Home';
+
+
 function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        {/* <Route path="/:pokemonId" element={<Pokemon />} /> */}
-      </Routes>
+      <Home />
     </>
   )
 }
